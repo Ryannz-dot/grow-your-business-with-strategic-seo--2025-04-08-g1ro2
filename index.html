@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow Your Business with Strategic SEO | Expert SEO Services</title>
-    <meta name="description" content="Boost your business visibility and traffic with our strategic SEO services. Specializing in on-page SEO, keyword research, and site design.">
-    <link rel="icon" href="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Portfolio%20site%20logo.png?updatedAt=1744098743286" type="image/png" onerror="this.onerror=null;this.src='https://placehold.co/32x32/0284c7/ffffff?text=Favicon';">
+    <title>Rehan | SEO & Social Media Specialist | Portfolio</title>
+    <meta name="description" content="Portfolio of Rehan 'Ryan', a seasoned SEO and Social Media Management Specialist driving organic growth and elevating online brand presence.">
+    <link rel="icon" href="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Portfolio%20site%20logo.png?updatedAt=1744098743286" type="image/png" onerror="this.onerror=null;this.src='https://placehold.co/32x32/0284c7/ffffff?text=RN';">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -17,314 +17,409 @@
             font-family: 'Inter', sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            color: #1f2937; /* Equivalent to text-gray-800 */
-            background-color: #ffffff; /* Equivalent to bg-white */
+            color: #1f2937; /* text-gray-800 */
+            background-color: #ffffff; /* bg-white */
         }
-        /* Custom gradient for hero if needed, though Tailwind classes are preferred */
         .hero-gradient-custom {
             background-image: linear-gradient(to bottom right, #f0f9ff, #e0f2fe, #dbeafe); /* sky-50, blue-100, indigo-100 */
         }
         .cta-gradient-custom {
             background-image: linear-gradient(to right, #2563eb, #4f46e5); /* blue-600, indigo-600 */
         }
-        /* Ensuring icons in features are consistently sized and aligned */
         .feature-icon i {
-            font-size: 2rem; /* Adjust as needed, Tailwind text-3xl is 1.875rem */
+            font-size: 2rem;
             line-height: 1;
         }
-        /* Add a subtle border to FAQ items for better separation */
         .faq-item {
             border: 1px solid #e5e7eb; /* border-gray-200 */
         }
         .faq-item:hover {
             border-color: #d1d5db; /* border-gray-300 */
         }
+        .profile-pic-about {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 0 auto 2rem auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        /* Styles for Skill Badges */
+        .skill-badge {
+           display: inline-block;
+           background-color: #e0f2fe; /* light blue background */
+           color: #0c4a6e; /* dark blue text */
+           padding: 0.3rem 0.8rem;
+           margin: 0.2rem;
+           border-radius: 9999px; /* pill shape */
+           font-size: 0.875rem; /* text-sm */
+           font-weight: 500; /* medium */
+           transition: all 0.2s ease-in-out;
+        }
+        .skill-badge:hover {
+            background-color: #bae6fd; /* slightly darker blue on hover */
+            transform: translateY(-1px);
+        }
     </style>
 </head>
-<body class="antialiased"> <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-md z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
                 <a href="https://rehannawaz.info" class="flex items-center">
-                    <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Portfolio%20site%20logo.png?updatedAt=1744098743286" 
-                         alt="Growth Pulse SEO Logo" 
+                    <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Portfolio%20site%20logo.png?updatedAt=1744098743286"
+                         alt="Growth Pulse SEO Logo"
                          class="h-10 mr-3"
                          onerror="this.onerror=null;this.src='https://placehold.co/40x40/0284C7/FFFFFF?text=Logo';">
                     <span class="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">Growth Pulse SEO</span>
                 </a>
-                
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
-                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Services</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Projects</a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">FAQ</a>
-                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">About Me</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300">Contact</a>
                     <a href="#contact" class="ml-4 bg-blue-600 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-                        Get Started
+                        Get in Touch
                     </a>
                 </div>
-
                 <button class="mobile-menu-button md:hidden text-gray-700 hover:text-blue-600 focus:outline-none" aria-label="Toggle menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-
             <div class="mobile-menu hidden md:hidden mt-3 bg-white rounded-xl shadow-xl border border-gray-100">
                 <div class="flex flex-col space-y-1 p-4">
-                    <a href="#features" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">Features</a>
-                    <a href="#benefits" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">Benefits</a>
-                    <a href="#testimonials" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">Testimonials</a>
+                    <a href="#services" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">Services</a>
+                    <a href="#skills" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">Skills</a>
+                    <a href="#projects" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">Projects</a>
                     <a href="#faq" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">FAQ</a>
-                    <a href="#about" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">About</a>
+                    <a href="#about" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">About Me</a>
                     <a href="#contact" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition-colors duration-200">Contact</a>
                     <a href="#contact" class="block mt-3 w-full text-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
-                        Get Started
+                        Get in Touch
                     </a>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="pt-36 pb-28 md:pt-40 md:pb-32 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
                 <div class="md:w-1/2 lg:w-3/5">
                     <div class="max-w-xl lg:max-w-2xl mx-auto md:mx-0 text-center md:text-left">
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-800 leading-tight mb-6">
-                            Transform Your Online Presence with Strategic SEO
+                           Transform Your Online Presence with Strategic SEO
                         </h1>
-                        <p class="text-lg sm:text-xl md:text-2xl text-gray-700 mb-10 md:mb-12">
-                            Drive sustainable growth with data-driven SEO strategies that deliver measurable results and ROI.
+                         <p class="text-2xl sm:text-3xl text-blue-700 font-semibold mb-6">SEO & Social Media Management Specialist | Digital Content Strategist</p>
+                        <p class="text-lg sm:text-xl md:text-xl text-gray-700 mb-10 md:mb-12">
+                           Drive significant growth with data-driven SEO strategies that deliver measurable results and ROI.
                         </p>
                         <a href="#contact" class="inline-block bg-blue-600 text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-lg">
-                            Get Your Free SEO Audit
+                            Discuss Your Project
                         </a>
                     </div>
                 </div>
                 <div class="md:w-1/2 lg:w-2/5 mt-10 md:mt-0">
                     <div class="rounded-xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500 ease-out">
-                        <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Growth%20Pulse%20SEO%20With%20Rehan.jpg?updatedAt=1744099244740" 
-                             alt="Growth Pulse SEO Professional working on a laptop" 
+                        <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Growth%20Pulse%20SEO%20With%20Rehan.jpg?updatedAt=1744099244740"
+                             alt="Rehan - SEO & Social Media Specialist at work"
                              class="w-full h-auto object-cover"
-                             onerror="this.onerror=null;this.src='https://placehold.co/800x650/E0F2FE/1E40AF?text=SEO+Professional';">
+                             onerror="this.onerror=null;this.src='https://placehold.co/800x650/E0F2FE/1E40AF?text=Rehan';">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="features" class="py-24 md:py-28 bg-white">
+    <!-- Services Section -->
+    <section id="services" class="py-24 md:py-28 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center mb-16 md:mb-20">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Comprehensive SEO Solutions</h2>
-                <p class="text-lg md:text-xl text-gray-600">Tailored strategies to increase your online visibility, drive qualified traffic, and boost conversions.</p>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">My Services</h2>
+                <p class="text-lg md:text-xl text-gray-600">Leveraging cutting-edge tools and proven strategies to deliver exceptional, measurable outcomes for your business.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Advanced On-Page SEO</h3>
-                    <p class="text-gray-600 leading-relaxed">Comprehensive optimization of meta tags, content structure, and technical elements to maximize search visibility and rankings.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+                <!-- Service Item 1: Comprehensive SEO -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-search-plus"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Comprehensive SEO Optimization</h3>
+                    <p class="text-gray-600 leading-relaxed">Holistic on-page, off-page, and technical SEO strategies to maximize visibility, authority, and organic rankings.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-keyboard"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Strategic Keyword Research</h3>
-                    <p class="text-gray-600 leading-relaxed">Data-driven keyword analysis to identify high-intent search terms that drive qualified traffic and conversions.</p>
+                <!-- Service Item 2: Keyword Research -->
+                 <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-key"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Keyword Research & Analysis</h3>
+                    <p class="text-gray-600 leading-relaxed">In-depth analysis to identify high-value keywords, understand competitor strategies, and pinpoint growth opportunities.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">SEO Audits</h3>
-                    <p class="text-gray-600 leading-relaxed">Comprehensive site analysis to identify and fix technical issues that impact search performance and user experience.</p>
+                 <!-- Service Item 3: Content Strategy -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-file-alt"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">SEO-Driven Content Strategy</h3>
+                    <p class="text-gray-600 leading-relaxed">Developing and executing content plans that build topical authority, improve rankings, and attract targeted traffic.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-sitemap"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Content Strategy Maps</h3>
-                    <p class="text-gray-600 leading-relaxed">Comprehensive content planning that establishes topical authority and captures featured snippets.</p>
+                <!-- Service Item 4: Social Media -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-share-alt"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Social Media Management</h3>
+                    <p class="text-gray-600 leading-relaxed">Full-service management (Pinterest, Facebook, etc.) covering content, scheduling, engagement, and performance analysis.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Website Content Creation</h3>
-                    <p class="text-gray-600 leading-relaxed">Development of engaging, SEO-optimized content that resonates with your audience and ranks well in search results.</p>
+                 <!-- Service Item 5: WordPress -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fab fa-wordpress"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">WordPress Website Services</h3>
+                    <p class="text-gray-600 leading-relaxed">Developing, optimizing, and managing WordPress sites for user experience, mobile responsiveness, and search visibility.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Local SEO Optimization</h3>
-                    <p class="text-gray-600 leading-relaxed">Google Business Profile optimization, local citation building, and geo-targeted content to dominate local search results.</p>
+                <!-- Service Item 6: AI Content -->
+                 <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-robot"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">AI-Powered Content Creation</h3>
+                    <p class="text-gray-600 leading-relaxed">Leveraging advanced AI tools for efficient generation, editing, and optimization of engaging, high-quality content.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Performance Analytics</h3>
-                    <p class="text-gray-600 leading-relaxed">Detailed tracking and reporting on key metrics with actionable insights to continuously refine your SEO strategy.</p>
+                 <!-- Service Item 7: GEO -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-lightbulb"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Generative Engine Optimization (GEO)</h3>
+                    <p class="text-gray-600 leading-relaxed">Optimize your site and content for discovery by AI chatbots, answer engines, and next-gen search.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">International SEO</h3>
-                    <p class="text-gray-600 leading-relaxed">Multilingual and multi-regional optimization strategies to expand your reach into global markets effectively.</p>
+                <!-- Service Item 8: Technical Audits -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-tasks"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Technical SEO Audits</h3>
+                    <p class="text-gray-600 leading-relaxed">Comprehensive site analysis to identify and resolve technical issues impacting search performance and user experience.</p>
                 </div>
-                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon">
-                        <i class="fas fa-edit"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Content Editing</h3>
-                    <p class="text-gray-600 leading-relaxed">Professional refinement of existing content to improve readability, engagement, and search engine performance.</p>
+                <!-- Service Item 9: Link Building -->
+                 <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-link"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Strategic Link Building</h3>
+                    <p class="text-gray-600 leading-relaxed">Ethical off-page optimization focused on acquiring high-quality backlinks to enhance domain authority and trust.</p>
+                </div>
+                <!-- Service Item 10: Cold Emailing -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-envelope-open-text"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cold Emailing Outreach</h3>
+                    <p class="text-gray-600 leading-relaxed">Crafting and managing targeted cold email campaigns for lead generation, link building, or partnership opportunities.</p>
+                </div>
+                 <!-- Service Item 11: Directory Sites -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-list-alt"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Directory Sites Setup & SEO</h3>
+                    <p class="text-gray-600 leading-relaxed">Setting up and optimizing online directory websites, including structure, listings, and SEO for visibility.</p>
+                </div>
+                 <!-- Service Item 12: Analytics -->
+                <div class="group bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500 hover:border-blue-600 w-full max-w-md">
+                    <div class="text-blue-500 group-hover:text-blue-600 mb-5 feature-icon"> <i class="fas fa-chart-pie"></i> </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Analytics & Reporting</h3>
+                    <p class="text-gray-600 leading-relaxed">Utilizing GA4 and Search Console for performance tracking, analysis, and generating actionable insights reports.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="benefits" class="py-24 md:py-28 bg-slate-50">
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 md:py-28 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-16 md:mb-20">Proven SEO Results</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-                <div class="text-center p-6 group">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-6 transition-colors duration-300">
-                        <i class="fas fa-chart-line text-5xl"></i>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-16 md:mb-20">Core Skills & Tools Proficiency</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+                <!-- Skill Card 1: SEO & Content -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cogs text-3xl text-blue-600 mr-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800">SEO & Content Strategy</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Top Search Rankings</h3>
-                    <p class="text-gray-600 leading-relaxed">Average 65% improvement in search rankings within 6 months for target keywords.</p>
+                    <div class="flex flex-wrap">
+                        <span class="skill-badge">On-Page SEO</span>
+                        <span class="skill-badge">Off-Page SEO</span>
+                        <span class="skill-badge">Keyword Research</span>
+                        <span class="skill-badge">Content Optimization</span>
+                        <span class="skill-badge">Technical SEO Audits</span>
+                        <span class="skill-badge">Link Building</span>
+                        <span class="skill-badge">SEO Content Writing</span>
+                        <span class="skill-badge">Competitor Analysis</span>
+                        <span class="skill-badge">Local SEO</span>
+                        <span class="skill-badge">GEO (Generative Engine Optimization)</span>
+                    </div>
                 </div>
-                <div class="text-center p-6 group">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-6 transition-colors duration-300">
-                        <i class="fas fa-users text-5xl"></i>
+                <!-- Skill Card 2: Social Media -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                     <div class="flex items-center mb-4">
+                        <i class="fas fa-hashtag text-3xl text-blue-600 mr-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Social Media Management</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Quality Traffic Growth</h3>
-                    <p class="text-gray-600 leading-relaxed">200%+ increase in qualified organic traffic through strategic optimization.</p>
+                     <div class="flex flex-wrap">
+                        <span class="skill-badge">Strategy Development</span>
+                        <span class="skill-badge">Content Creation</span>
+                        <span class="skill-badge">Pinterest</span>
+                        <span class="skill-badge">Facebook</span>
+                        <span class="skill-badge">Community Engagement</span>
+                        <span class="skill-badge">Campaign Management</span>
+                        <span class="skill-badge">Performance Tracking</span>
+                        <span class="skill-badge">Scheduling</span>
+                    </div>
                 </div>
-                <div class="text-center p-6 group">
-                    <div class="text-blue-500 group-hover:text-blue-600 mb-6 transition-colors duration-300">
-                        <i class="fas fa-exchange-alt text-5xl"></i>
+                <!-- Skill Card 3: Tools & Platforms -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                     <div class="flex items-center mb-4">
+                        <i class="fas fa-tools text-3xl text-blue-600 mr-4"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Tools & Platforms</h3>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Higher Conversion Rates</h3>
-                    <p class="text-gray-600 leading-relaxed">40% average increase in conversion rates through targeted SEO strategies.</p>
+                     <div class="flex flex-wrap">
+                        <span class="skill-badge">WordPress</span>
+                        <span class="skill-badge">Elementor</span>
+                        <span class="skill-badge">GA4</span>
+                        <span class="skill-badge">Search Console</span>
+                        <span class="skill-badge">Semrush</span>
+                        <span class="skill-badge">Ahrefs</span>
+                        <span class="skill-badge">Moz</span>
+                        <span class="skill-badge">SurferSEO</span>
+                        <span class="skill-badge">NeuronWriter</span>
+                        <span class="skill-badge">Jasper AI</span>
+                        <span class="skill-badge">Claude</span>
+                        <span class="skill-badge">Zimmwriter</span>
+                        <span class="skill-badge">AI Content Tools</span>
+                        <span class="skill-badge">Custom GPTs</span>
+                        <span class="skill-badge">Google Workspace</span>
+                        <span class="skill-badge">Asana</span>
+                        <span class="skill-badge">Canva</span>
+                        <span class="skill-badge">Nuelink</span>
+                        <span class="skill-badge">Buffer</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="py-24 md:py-28 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-16 md:mb-20">
-                About Growth Pulse SEO by <a href="https://www.linkedin.com/in/rehan-n/" class="text-blue-600 hover:text-blue-700 transition-colors duration-300 underline hover:no-underline" target="_blank" rel="noopener noreferrer">Rehan</a>
+             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-16 md:mb-20">
+                About Me
             </h2>
-            <div class="space-y-8 text-gray-700 text-lg leading-relaxed">
-                <p>
-                    Since launching Growth Pulse SEO in 2020, I've been helping businesses achieve their maximum online potential. As a HubSpot-certified SEO specialist, I bring over 5 years of experience in digital marketing to every project, focusing on data-driven strategies that deliver measurable results rather than quick fixes or techniques that could harm your business long-term.
+            <div class="text-gray-700 text-lg leading-relaxed bg-slate-50 p-8 rounded-xl shadow-lg">
+                 <h3 class="text-2xl font-bold text-blue-700 mb-4">SEO & Social Media Growth Strategist</h3>
+                <p class="mb-4">
+                    I'm Rehan 'Ryan', a results-driven SEO and Social Media Specialist who transforms online visibility into business growth. Since 2021, I've helped companies achieve measurable increases in organic traffic, engagement, and conversions.
                 </p>
-                <p>
-                    My approach combines technical SEO expertise, strategic content development, and comprehensive digital marketing campaigns tailored to your specific industry and goals. With expertise in keyword research, content creation, and WordPress design, I've developed a keen understanding of what drives search success in competitive markets.
+                <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Expertise That Delivers Results</h4>
+                <ul class="list-disc list-inside space-y-2 mb-4">
+                    <li><span class="font-medium">Advanced SEO Strategy:</span> Comprehensive keyword research, technical optimization, and content enhancement that drives ranking improvements.</li>
+                    <li><span class="font-medium">Social Media Mastery:</span> Creating engagement-focused campaigns that build communities and convert followers into customers.</li>
+                    <li><span class="font-medium">AI-Enhanced Marketing:</span> Leveraging cutting-edge tools and custom GPTs to maximize efficiency without sacrificing quality.</li>
+                    <li><span class="font-medium">Data-Driven Decisions:</span> Implementing analytics-backed strategies that deliver quantifiable ROI.</li>
+                </ul>
+                <p class="mb-4">
+                    My approach combines technical expertise with a deep understanding of audience psychology, refined through 14 years in customer service and quality assurance roles. This unique perspective allows me to align SEO and social strategies with genuine user needs.
                 </p>
-                <p>
-                    What sets my services apart is personal attention to detail. As a remote freelance specialist, I oversee every aspect of your SEO campaign, from ghostwriting and blogging to social media management and email marketing. This hands-on approach ensures consistent quality and allows me to quickly adapt strategies based on performance data and algorithm changes.
+                <h4 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Client Success Philosophy</h4>
+                <p class="mb-4">
+                    I believe in transparent communication, adaptable solutions, and measurable outcomes. Every strategy I develop is tailored to your specific business goals and target audience.
                 </p>
-                <p>
-                    My mission is simple: to empower your business with transparent, results-driven SEO solutions that generate sustainable growth and tangible ROI. I'm passionate about elevating businesses through tailored digital marketing strategies that drive meaningful results, building long-term partnerships based on trust, clear communication, and exceptional outcomes.
+                 <p class="mb-4">
+                    When not optimizing digital assets, I'm exploring emerging marketing trends, experimenting with AI-powered content creation tools, capturing moments through travel photography, and continuously expanding my professional knowledge.
+                </p>
+                 <p class="mb-4">
+                    Ready to elevate your digital presence? Let's connect.
+                </p>
+                <p class="mt-6">
+                    Connect with me on <a href="https://www.linkedin.com/in/rehan-n/" class="text-blue-600 hover:text-blue-700 transition-colors duration-300 underline hover:no-underline" target="_blank" rel="noopener noreferrer">LinkedIn</a> or <a href="https://x.com/Rehannawaz7" class="text-blue-600 hover:text-blue-700 transition-colors duration-300 underline hover:no-underline" target="_blank" rel="noopener noreferrer">X (Twitter)</a>.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="py-24 md:py-28 bg-slate-50">
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 md:py-28 bg-slate-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-16 md:mb-20">Recent Customer Projects</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-16 md:mb-20">Recent Project Highlights</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-gray-200">
                     <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Webdesign.png?updatedAt=1744098743326" alt="Web Design Services Project Thumbnail" class="w-full h-52 object-cover rounded-lg mb-5 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x208/E2E8F0/94A3B8?text=Web+Design';">
                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Web Design Services</h3>
-                    <p class="text-gray-600 leading-relaxed">Complete SEO strategy for a professional web design company.</p>
+                    <p class="text-gray-600 leading-relaxed">Developed a complete SEO strategy, including keyword research and on-page optimization, for a professional web design company.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-gray-200">
                     <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Plumbing.png?updatedAt=1744098743292" alt="Plumbing Services Project Thumbnail" class="w-full h-52 object-cover rounded-lg mb-5 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x208/E2E8F0/94A3B8?text=Plumbing';">
                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Plumbing Services</h3>
-                    <p class="text-gray-600 leading-relaxed">Local SEO campaign for an emergency plumbing business.</p>
+                    <p class="text-gray-600 leading-relaxed">Executed a local SEO campaign, including Google Business Profile optimization and citation building, for an emergency plumbing business.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-gray-200">
                     <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Motorcycle%20wreckers.png?updatedAt=1744098743278" alt="Motorcycle Wreckers Project Thumbnail" class="w-full h-52 object-cover rounded-lg mb-5 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x208/E2E8F0/94A3B8?text=Motorcycle';">
                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Motorcycle Wreckers</h3>
-                    <p class="text-gray-600 leading-relaxed">Keyword optimization for a motorcycle parts and service company.</p>
+                    <p class="text-gray-600 leading-relaxed">Performed keyword optimization and content strategy adjustments for a motorcycle parts and service company to improve online visibility.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-gray-200">
                     <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Melbourne.png?updatedAt=1744098743272" alt="Melbourne Tourism Project Thumbnail" class="w-full h-52 object-cover rounded-lg mb-5 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x208/E2E8F0/94A3B8?text=Melbourne+Tour';">
                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Melbourne Tourism</h3>
-                    <p class="text-gray-600 leading-relaxed">Content strategy for a local Melbourne tourism business.</p>
+                    <p class="text-gray-600 leading-relaxed">Developed a targeted content strategy focused on local keywords and attractions for a Melbourne-based tourism business.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-gray-200">
                     <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Roof%20repairs.png?updatedAt=1744098743263" alt="Roof Repairs Project Thumbnail" class="w-full h-52 object-cover rounded-lg mb-5 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x208/E2E8F0/94A3B8?text=Roof+Repairs';">
                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Roof Repairs</h3>
-                    <p class="text-gray-600 leading-relaxed">Technical SEO and site structure optimization for a roofing company.</p>
+                    <p class="text-gray-600 leading-relaxed">Conducted technical SEO audits and optimized site structure to improve search performance for a roofing contractor.</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 hover:border-gray-200">
                     <img src="https://ik.imagekit.io/emergencyplumber/Personal%20Portfolio%20Site/Husq%20v%20Directory.png?updatedAt=1744098743260" alt="Business Directory Project Thumbnail" class="w-full h-52 object-cover rounded-lg mb-5 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x208/E2E8F0/94A3B8?text=Directory';">
                     <h3 class="font-semibold text-xl text-gray-800 mb-2">Business Directory</h3>
-                    <p class="text-gray-600 leading-relaxed">SEO optimization for an online business directory platform.</p>
+                    <p class="text-gray-600 leading-relaxed">Implemented comprehensive SEO optimization, including schema markup and content enhancement, for an online business directory.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FAQ Section -->
     <section id="faq" class="py-24 md:py-28 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-16 md:mb-20">Frequently Asked Questions</h2>
             <div class="space-y-6">
-                <div class="bg-slate-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 faq-item">
+                 <div class="bg-slate-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 faq-item">
                     <h3 class="text-xl font-bold text-gray-800 mb-3">How long does it take to see SEO results?</h3>
-                    <p class="text-gray-600 leading-relaxed">While initial improvements can be seen within 1-2 months, significant results typically manifest within 4-6 months. Our comprehensive approach ensures sustainable, long-term growth in search rankings and organic traffic.</p>
+                    <p class="text-gray-600 leading-relaxed">While initial improvements can often be seen within 1-3 months (like better indexing or keyword visibility), significant results such as substantial traffic growth typically manifest within 4-6 months, sometimes longer depending on competition and website history. SEO is a long-term strategy focused on effective growth. </p>
                 </div>
                 <div class="bg-slate-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 faq-item">
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">What sets your SEO services apart?</h3>
-                    <p class="text-gray-600 leading-relaxed">We combine data-driven strategies, custom-tailored solutions, and transparent reporting to deliver measurable results. Our team stays ahead of algorithm updates and industry trends to ensure optimal performance.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">What makes your approach different?</h3>
+                    <p class="text-gray-600 leading-relaxed">My approach is built on transparency, data-driven decisions, and a personalized strategy tailored to your specific business goals. I combine technical expertise with strategic content and social media management, focusing on measurable outcomes and clear communication. My background in QA ensures meticulous execution.</p>
                 </div>
-                <div class="bg-slate-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 faq-item">
+                 <div class="bg-slate-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 faq-item">
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Do you guarantee first-page rankings?</h3>
-                    <p class="text-gray-600 leading-relaxed">While we can't guarantee specific rankings due to search engine algorithms' dynamic nature, we have a proven track record of significantly improving search visibility and achieving top rankings for target keywords.</p>
+                    <p class="text-gray-600 leading-relaxed">No ethical SEO specialist can guarantee specific rankings (especially #1) because Google's algorithm is complex and constantly changing. However, I focus on proven strategies and best practices to significantly improve your search visibility, target relevant keywords, and drive qualified traffic, which leads to higher rankings over time.</p>
                 </div>
                 <div class="bg-slate-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 faq-item">
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">What's included in your SEO packages?</h3>
-                    <p class="text-gray-600 leading-relaxed">Our comprehensive packages include technical SEO audits, keyword research, content optimization, link building, regular performance monitoring, and monthly reporting. Each package is customized to meet your specific goals.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">What's included in your services?</h3>
+                    <p class="text-gray-600 leading-relaxed">My services are typically project-based or retainer-based and customized. Common components include technical SEO audits, keyword research, comprehensive SEO optimization, content strategy/creation, social media management, WordPress services, link building analysis, cold emailing, directory setup, GEO, regular performance monitoring, and detailed reporting. We'll define the exact scope based on your needs.</p>
                 </div>
                 <div class="bg-slate-50 p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 faq-item">
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">How do you measure SEO success?</h3>
-                    <p class="text-gray-600 leading-relaxed">We track multiple KPIs including keyword rankings, organic traffic growth, conversion rates, backlink quality, and ROI. Monthly reports provide detailed insights into your campaign's performance.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">How do you measure success?</h3>
+                    <p class="text-gray-600 leading-relaxed">Success is measured against the goals we establish together. Key performance indicators (KPIs) typically include improvements in organic keyword rankings, growth in organic website traffic, increases in qualified leads or conversions, enhanced social media engagement, and improvements in technical site health. I provide regular reports detailing progress on these metrics.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="py-24 md:py-28 text-white relative overflow-hidden cta-gradient-custom bg-blue-600">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" 
-                 alt="Abstract business background" 
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                 alt="Abstract business background"
                  class="object-cover w-full h-full opacity-15"
                  onerror="this.onerror=null;this.src='https://placehold.co/1500x800/1E40AF/FFFFFF?text=CTA+Background';">
         </div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Ready to Dominate Search Rankings?</h2>
-            <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">Get a comprehensive SEO audit and custom growth strategy worth $1,000 - completely free, no obligations.</p>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Ready to Elevate Your Online Presence?</h2>
+            <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">Let's discuss how my tailored SEO and Social Media strategies can drive growth for your business. Get in touch for a free initial consultation.</p>
             <a href="#contact" class="inline-block bg-white text-blue-600 text-lg font-semibold px-10 py-4 rounded-full hover:bg-slate-100 transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-lg">
-                Get Your Free SEO Audit
+                Let's Discuss
             </a>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-24 md:py-28 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-10 md:mb-12">Let's Grow Together</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center mb-10 md:mb-12">Let's Connect</h2>
             <div class="text-center mb-12 md:mb-16">
-                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Schedule your free consultation today and discover how we can help grow your business with proven SEO strategies.</p>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Interested in working together or have a question? Fill out the form below, and I'll get back to you soon.</p>
             </div>
             <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl shadow-2xl p-2 md:p-3">
                  <div class="bg-white rounded-lg shadow-inner overflow-hidden">
@@ -334,20 +429,22 @@
         </div>
     </section>
 
+    <!-- Footer Section - Updated Email -->
     <footer class="bg-slate-800 text-slate-300 py-16 md:py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-5">Growth Pulse SEO</h3>
-                    <p class="text-slate-400 leading-relaxed">Empowering businesses with strategic SEO solutions for sustainable growth.</p>
+                    <p class="text-slate-400 leading-relaxed">Empowering businesses with strategic SEO solutions for measurable online growth.</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-5">Quick Links</h4>
+                    <h4 class="text-lg font-semibold text-white mb-5">Navigation</h4>
                     <ul class="space-y-3">
-                        <li><a href="#features" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">Features</a></li>
-                        <li><a href="#benefits" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
-                        <li><a href="#testimonials" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
-                        <li><a href="#about" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">About</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">Services</a></li>
+                        <li><a href="#skills" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">Skills</a></li>
+                        <li><a href="#projects" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">Projects</a></li>
+                        <li><a href="#faq" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">FAQ</a></li>
+                        <li><a href="#about" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">About Me</a></li>
                         <li><a href="#contact" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
@@ -362,7 +459,7 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-5">Connect</h4>
                     <div class="flex space-x-5 mb-5">
-                        <a href="https://x.com/Rehannawaz7" class="text-slate-400 hover:text-blue-400 transition-colors duration-300" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <a href="https://x.com/Rehannawaz7" class="text-slate-400 hover:text-blue-400 transition-colors duration-300" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
                             <i class="fab fa-twitter text-2xl"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/rehan-n/" class="text-slate-400 hover:text-blue-400 transition-colors duration-300" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -370,17 +467,19 @@
                         </a>
                     </div>
                     <div>
+                        <!-- Updated Email Address Here -->
                         <p class="text-slate-400 mb-1">Email: <a href="mailto:contact@rehannawaz.info" class="hover:text-blue-400 transition-colors">contact@rehannawaz.info</a></p>
                         <a href="https://rehannawaz.info" class="text-slate-400 hover:text-blue-400 transition-colors duration-300">rehannawaz.info</a>
                     </div>
                 </div>
             </div>
             <div class="border-t border-slate-700 mt-12 pt-8 text-center text-slate-500">
-                <p>&copy; <span id="currentYear"></span> Growth Pulse SEO. All rights reserved.</p>
+                <p>© <span id="currentYear"></span> Growth Pulse SEO. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript Section -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Mobile menu toggle
@@ -391,7 +490,6 @@
             if (mobileMenuButton && mobileMenu && menuIcon) {
                 mobileMenuButton.addEventListener('click', () => {
                     mobileMenu.classList.toggle('hidden');
-                    // Toggle icon
                     if (mobileMenu.classList.contains('hidden')) {
                         menuIcon.classList.remove('fa-times');
                         menuIcon.classList.add('fa-bars');
@@ -401,18 +499,18 @@
                     }
                 });
 
-                // Close mobile menu when a link is clicked
                 const mobileMenuLinks = mobileMenu.querySelectorAll('a');
                 mobileMenuLinks.forEach(link => {
                     link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                        menuIcon.classList.remove('fa-times');
-                        menuIcon.classList.add('fa-bars');
+                        if (!mobileMenu.classList.contains('hidden')) {
+                           mobileMenu.classList.add('hidden');
+                           menuIcon.classList.remove('fa-times');
+                           menuIcon.classList.add('fa-bars');
+                        }
                     });
                 });
             }
 
-            // Set current year in footer
             const yearSpan = document.getElementById('currentYear');
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
